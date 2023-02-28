@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challege-01</title>
+    <style>
+        @import url('https://fonts.google.com/specimen/Outfit');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        :root {
+            --White: hsl(0, 0%, 100%);
+            --Light-gray: hsl(212, 45%, 89%);
+            --Grayish-blue: hsl(220, 15%, 55%);
+            --Dark-blue: hsl(218, 44%, 22%);
+        }
+
+        body {
+            background: var(--Light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 7%;
+        }
+
+        .container {
+            width: 22vw;
+           background: var(--White);
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+
+        .qr-box img {
+            margin-bottom: 2rem;
+            width: 19vw;
+            border-radius: .5rem;
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .content p {
+            color: var(--Grayish-blue);
+        }
+
+        @media screen and (max-width:1500px){
+        body{
+            margin-top: 9.2rem;
+        }
+        .container{
+            width: 17rem;
+        }
+         .qr-box img{
+            width: 14rem;
+         }
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="qr-box">
+            <img src="image-qr-code.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Improve your front-end skills by building projects</h3>
+            <br>
+            <p>Scan the QR to visit Frontend Mentor and take your coding skills to <br> the next level</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
